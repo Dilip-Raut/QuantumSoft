@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager" />
+	</listeners>
+
+	<test name="AboutUsTest">
+		<parameter name="os" value="Windows" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testCases.TC_001_HomePageQuantumSoftTestDDT">
+				<methods>
+					<include name="verify_getQuoteLink" />
+					<include name="verify_fillFormDetailsDDT" />
+					<include name="verify_FooterAboutUsLink" />
+					<include name="verify_FooterServicesLink" />
+					<include name="verify_FooterContactUsLink" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
